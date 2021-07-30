@@ -5,7 +5,9 @@
 # is restricted to this project.
 
 # General application configuration
-use Mix.Config
+import Config
+
+config :speed_quiz, :env, config_env()
 
 # Configures the endpoint
 config :speed_quiz, SpeedQuizWeb.Endpoint,
